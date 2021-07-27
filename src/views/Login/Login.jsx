@@ -64,7 +64,7 @@ class Login extends Component {
             <Layout className='login animated fadeIn'>
                 <div className='model'>
                     <div className='login-form'>
-                        <h3>后台管理系统</h3>
+                        <h3></h3>
                         <Divider />
                         <Form onFinish={this.handleSubmit} ref={this.formRef}>
                             <Form.Item name='username' rules={[{ required: true, message: '请输入用户名!' }]}>
