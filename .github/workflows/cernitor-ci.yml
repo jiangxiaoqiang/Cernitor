@@ -20,6 +20,7 @@ jobs:
         run: |
           sudo yarn 
           sudo yarn add --check-files node-sass
+          sudo npm rebuild node-sass
           yarn build
       - name: Copy build folder to Server
         uses: AEnterprise/rsync-deploy@v1.0
