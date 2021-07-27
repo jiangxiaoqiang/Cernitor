@@ -19,7 +19,7 @@ jobs:
       - name: Build React App
         run: |
           sudo yarn 
-          sudo npm rebuild node-sass --unsafe-perm=true --allow-root
+          sudo yarn add --check-files node-sass
           yarn build
       - name: Copy build folder to Server
         uses: AEnterprise/rsync-deploy@v1.0
