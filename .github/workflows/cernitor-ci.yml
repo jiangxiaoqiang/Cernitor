@@ -17,7 +17,8 @@ jobs:
         with: 
          cmd: install
       - name: Build React App
-        run: | 
+        run: |
+          yarn 
           sudo npm rebuild node-sass --unsafe-perm=true --allow-root
           yarn build
       - name: Copy build folder to Server
